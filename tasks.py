@@ -1,10 +1,10 @@
 #getters and setter
 
 class Task:
-    def __init__(self):
-        self.tk = ""
+    def __init__(self, task, duedate, priority):
+        self.task = task
+        self.duedate = duedate
+        self.priority = priority
 
-    def get_task(self):
-        return self.tk
-    
+        
     
