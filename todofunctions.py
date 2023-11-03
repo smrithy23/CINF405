@@ -5,14 +5,7 @@ class todoList:
     def __init__(self):
         #dictionary to add task
         self.tasks = {} 
-    
-    #add task
-    # def add_task(self,task):
-    #     numtasks = len(self.tasks)
-    #     self.tasks[numtasks+1] = {'Task':task, 'Priority': 0, 'Completed':False }
-    #     print("Task added in 1")
-    
-    #To add task, sets priority for the task, and defaults the completed to False
+   
     def add_task(self,task,priority):
         numtasks = len(self.tasks)
         self.tasks[numtasks+1] = {'Task':task, 'Priority': priority, 'Completed':False }
@@ -29,8 +22,15 @@ class todoList:
                 print(key + ':', v[key])
 
             print("\n")
+    
+    #mark as completed
+    def mark_task(self,taskid):
+        if taskid in self.tasks:
+            self.tasks[taskid]['Completed'] = True
+            print("Task has been masked as completed.")
+        else:
+            print("Invalid task number")
     #remove task
-    #display task
 
     #Edit task
     def __str__(self):
