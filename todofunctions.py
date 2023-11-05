@@ -3,9 +3,10 @@
 
 class todoList:
     def __init__(self):
-        #dictionary to add task
+        #dictionary to keep track of tasks
         self.tasks = {} 
    
+    #to add a task
     def add_task(self,task,priority):
         numtasks = len(self.tasks)
         self.tasks[numtasks+1] = {'Task':task, 'Priority': priority, 'Completed':False }
@@ -13,10 +14,10 @@ class todoList:
 
     #displays the current list
     def display_list(self):
-        print("To-do list")
+        print("\nTo-do list")
         print("----------")
         for k,v in self.tasks.items():
-            print("Task ID:", k)
+            print("Task No:", k)
 
             for key in v:
                 print(key + ':', v[key])
@@ -30,8 +31,25 @@ class todoList:
             print("Task has been masked as completed.")
         else:
             print("Invalid task number")
+
     #remove task
+    def del_task(self,taskid):
+        if taskid in self.tasks:
+            self.tasks.pop(taskid)
+            print("Task was successfully deleted.")
+        else:
+            print("Invalid task")
 
     #Edit task
+    def edit_task(self,taskid,taskName):
+        if taskid in self.tasks:
+            self.tasks[taskid]['Task'] = taskName
+        else:
+            print("Invalid task number")
+
+
+    #Sort tasks by priority
+
+    #To string 
     def __str__(self):
         return self.tasks
