@@ -1,6 +1,6 @@
 import todofunctions
 
-#save and load needs to be done
+#Displays menu to user
 def display_options():
     print("\nChoose an option:")
     print("1. Add a new task") #DONE
@@ -58,6 +58,19 @@ def main():
             list_obj.display_list()
             choice = display_options()
 
+        elif (choice == 5):
+            print("Sorting list by priority...") #needs to be implemented
+            choice = display_options()
+
+        elif (choice == 6):
+            print("Saving task...") #needs to be implemented
+            choice = display_options()
+
+        elif (choice == 7):
+            print("Loading task..")#needs to be implemented
+            choice = display_options()
+
+        #To quit
         elif (choice == 8):
             print("Goodbye")
             flag = False
