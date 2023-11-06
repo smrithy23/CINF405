@@ -5,8 +5,12 @@ The goal of the project is create a user-friendly application to allow users to 
 Smrithy Mudavangattil Sajan, Jasmin Kogskta
 
 ### Project Tasks
-*Smrithy - Create, Remove, Display, Priority, helper class
+Smrithy - Functions
 <br>
-*Jasmin - GUI interface
+Jasmin - GUI interface
+<br>
+Igli - Database
+<br>
+
 
 
