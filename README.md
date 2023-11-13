@@ -5,12 +5,13 @@ The goal of the project is create a user-friendly application to allow users to 
 Smrithy Mudavangattil Sajan, Jasmin Kogskta
 
 ### Project Tasks
-Smrithy - Functions
+Smrithy - Add task, Mark task as completed, Remove task, Change description, Helper
 <br>
 Jasmin - GUI interface
 <br>
 Igli - Database
 <br>
+Rod - Save and Load Functions
 
 
 
