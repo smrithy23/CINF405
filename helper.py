@@ -3,14 +3,14 @@ import todofunctions
 #Displays menu to user
 def display_options():
     print("\nChoose an option:")
-    print("1. Add a new task") #DONE
+    print("1. Add a task") #DONE
     print("2. Mark task as completed") #DONE
     print("3. Remove the task") #DONE
     print("4. Change the description of an pre-exsisting task")#DONE
     print("5. Sort list by priority") 
     print("6. Save task list")
     print("7. Load pre-existing list")
-    print("8. Exit")
+    print("8. Exit")#DONE
     choice = int(input('\nPlease enter your choice (1-8):'))
     return choice
 
