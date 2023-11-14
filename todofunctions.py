@@ -49,6 +49,8 @@ class todoList:
 
 
     #Sort tasks by priority
+    #Save task
+    #Load task
 
     #To string 
     def __str__(self):
